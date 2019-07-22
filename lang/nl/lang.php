@@ -1,0 +1,28 @@
+<?php return [
+    'plugin' => [
+        'name' => 'Slider',
+        'description' => 'Plugin to add an image slider',
+    ],
+    'strings' => [
+        'slide_subtitle' => 'Eerste regel tekst',
+        'slide_title' => 'Tweede (hoofd)regel tekst',
+        'slide_description' => 'Extra tekst',
+        'slide_image' => 'Afbeelding',
+        'button_active' => 'Knop met link toevoegen',
+        'button_color' => 'Knop achtergrond kleur',
+        'button_text' => 'Tekst in knop',
+        'button_url' => 'Link naar pagina / website',
+        'button_1' => 'Button 1',
+        'button_2' => 'Button 2',
+        'sort_order' => 'Volgorde',
+        'manage_slider' => 'Slider beheren',
+        'manage_slides' => 'Slides toevoegen en verwijderen',
+        'controller_create' => 'Slide aanmaken',
+        'controller_edit' => 'Slide bewerken',
+        'controller_save' => 'Slide opgeslagen',
+        'controller_delete' => 'Slide verwijderd',
+        'controller_show' => 'Slide weergeven',
+        'active' => 'Slide weergeven',
+        'image' => 'Afbeelding',
+    ],
+];
