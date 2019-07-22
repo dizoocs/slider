@@ -1,0 +1,28 @@
+<?php return [
+    'plugin' => [
+        'name' => 'Slider',
+        'description' => 'Plugin to add an image slider',
+    ],
+    'strings' => [
+        'slide_subtitle' => 'First line of text',
+        'slide_title' => 'Second (main)line text',
+        'slide_description' => 'Extra text',
+        'slide_image' => 'Image',
+        'button_active' => 'Add button with link',
+        'button_color' => 'Button background color',
+        'button_text' => 'Text in button',
+        'button_url' => 'Link to page / website',
+        'button_1' => 'Button 1',
+        'button_2' => 'Button 2',
+        'sort_order' => 'Sort order',
+        'manage_slider' => 'Manage slider',
+        'manage_slides' => 'Add and delete slides',
+        'controller_create' => 'Create new slide',
+        'controller_edit' => 'Edit slide',
+        'controller_save' => 'Slide successfully saved',
+        'controller_delete' => 'Slide successful deleted',
+        'controller_show' => 'Preview slide',
+        'active' => 'Display slide',
+        'image' => 'Image',
+    ],
+];
