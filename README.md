@@ -1,0 +1,2 @@
+# slider
+OctoberCMS slider plugin
