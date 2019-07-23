@@ -9,3 +9,5 @@
 1.0.4:
     - 'Updated table dizoo_slider_slides'
     - builder_table_update_dizoo_slider_slides_2.php
+1.0.5:
+    - 'Updated Owl carousel to the newest version and fixed single slide bug'
