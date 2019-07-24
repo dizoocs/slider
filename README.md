@@ -1,12 +1,12 @@
 # slider
 OctoberCMS slider plugin
 
-###Options
+### Options
 
 - Autoplay
 - Loop
 
-###Fields
+### Fields
 
 - Image *required*
 - First line
