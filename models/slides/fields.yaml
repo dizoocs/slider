@@ -29,6 +29,14 @@ fields:
         type: textarea
         attributes:
             maxlength: '210'
+    text_align:
+        label: 'dizoo.slider::lang.strings.text_align'
+        options:
+            left: 'dizoo.slider::lang.strings.left'
+            center: 'dizoo.slider::lang.strings.center'
+        span: left
+        default: left
+        type: balloon-selector
     active:
         label: 'dizoo.slider::lang.strings.active'
         span: left

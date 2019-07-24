@@ -9,7 +9,7 @@
                     <div class="pos-tb-center hero-overlay-inner">
                         <div class="container">
                             <div class="row row-tb-20">
-                                <div class="col-md-8">
+                                <div class="col-md-8{% if slide.text_align == 'center' %} col-md-offset-2 text-center{% endif %}">
                                     {% if slide.subtitle %}<h2 class="mb-10">{{ slide.subtitle }}</h2>{% endif %}
                                     <h1 class="t-uppercase mb-20 font-50">{{ slide.title }}</h1>
                                     {% if slide.description %}<p class="mb-30 color-lighter h4">{{ slide.description }}</p>{% endif %}
