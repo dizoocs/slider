@@ -12,6 +12,7 @@ OctoberCMS slider plugin
 - First line
 - Second (Main) line *required*
 - Description
+- Text align
 - Display slide
 - Button 1
     - Display button
