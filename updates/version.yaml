@@ -11,3 +11,6 @@
     - builder_table_update_dizoo_slider_slides_2.php
 1.0.5:
     - 'Updated Owl carousel to the newest version and fixed single slide bug'
+1.0.6:
+    - 'Added an option to align text for each slide'
+    - add_text_align.php
