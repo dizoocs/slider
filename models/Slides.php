@@ -20,6 +20,23 @@ class Slides extends Model
      */
     public $timestamps = false;
 
+    /**
+     * Softly implement the TranslatableModel behavior.
+     */
+    public $implement = ['@RainLab.Translate.Behaviors.TranslatableModel'];
+
+    /**
+     * @var array Attributes that support translation, if available.
+     */
+    public $translatable = [
+        'title',
+        'subtitle',
+        'description',
+        'button_1_text',
+        'button_2_text',
+        'button_1_url',
+        'button_2_url'
+    ];
 
     /**
      * @var string The database table used by the model.
