@@ -19,7 +19,9 @@ class Slider extends ComponentBase {
         $slides = $this->getSlides();
         if($slides->count()) {
             $this->page['slides'] = $slides;
-            $this->addCss('/plugins/dizoo/slider/assets/css/bootstrap.min.css');
+            if($this->property('bootstrap')) {
+                $this->addCss('/plugins/dizoo/slider/assets/css/bootstrap.min.css');
+            }
             $this->addCss('/plugins/dizoo/slider/assets/css/owl.carousel.min.css');
             $this->addCss('/plugins/dizoo/slider/assets/css/owl.theme.min.css');
             $this->addJs('/plugins/dizoo/slider/assets/js/owl.carousel.min.js');
@@ -49,6 +51,12 @@ class Slider extends ComponentBase {
                  'description'       => 'Loop slides',
                  'default'           => true,
                  'type'              => 'checkbox'
+            ],
+            'bootstrap' => [
+                'title'             => 'Include Bootstrap',
+                'description'       => 'If your theme already uses bootstrap (v3.3.7+) uncheck this box',
+                'default'           => true,
+                'type'              => 'checkbox'
             ]
         ];
     }
