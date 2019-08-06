@@ -25,3 +25,4 @@ OctoberCMS slider plugin
     - Display button
     - Text in button
     - Link to page / website
+    
