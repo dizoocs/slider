@@ -1,6 +1,7 @@
 # slider
 OctoberCMS slider plugin
 
+
 ### Options
 
 - Autoplay
