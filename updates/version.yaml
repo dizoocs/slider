@@ -16,3 +16,5 @@
     - add_text_align.php
 1.0.7:
     - 'Added support for Rainlab Translate plugin'
+1.0.8:
+    - 'Made the use of bootstrap optional to prevent overhead'
