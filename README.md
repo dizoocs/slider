@@ -5,6 +5,7 @@ OctoberCMS slider plugin
 
 - Autoplay
 - Loop
+- Bootstrap
 
 ### Fields
 
