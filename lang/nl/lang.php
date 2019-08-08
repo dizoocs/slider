@@ -8,6 +8,7 @@
         'slide_title' => 'Tweede (hoofd)regel tekst',
         'slide_description' => 'Extra tekst',
         'slide_image' => 'Afbeelding',
+        'slide_font_size' => 'Grootte lettertype',
         'button_active' => 'Knop met link toevoegen',
         'button_color' => 'Knop achtergrond kleur',
         'button_text' => 'Tekst in knop',
