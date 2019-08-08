@@ -21,3 +21,5 @@
 1.1.0:
     - 'Added new feature for image align and the option to change font-size on the titles.'
     - add_imagealign_and_fontsize.php
+1.1.1:
+    - 'Bugfix for translate content.'

@@ -8,6 +8,7 @@
         'slide_title' => 'Second (main)line text',
         'slide_description' => 'Extra text',
         'slide_image' => 'Image',
+        'slide_font_size' => 'Font size',
         'button_active' => 'Add button with link',
         'button_color' => 'Button background color',
         'button_text' => 'Text in button',
