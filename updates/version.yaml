@@ -18,3 +18,5 @@
     - 'Added support for Rainlab Translate plugin'
 1.0.8:
     - 'Made the use of bootstrap optional to prevent overhead'
+1.1.0:
+    - 'Added new feature for image align and the option to change font-size on the titles.'

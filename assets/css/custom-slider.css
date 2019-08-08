@@ -1,0 +1,11 @@
+.slider-bg-left {
+    background-position: left;
+}
+
+.slider-bg-right {
+    background-position: right;
+}
+
+.slider-bg-center {
+    background-position: center;
+}

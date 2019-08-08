@@ -37,6 +37,15 @@ fields:
         span: left
         default: left
         type: balloon-selector
+    image_align:
+        label: 'dizoo.slider::lang.strings.image_align'
+        options:
+            left: 'dizoo.slider::lang.strings.left'
+            center: 'dizoo.slider::lang.strings.center'
+            right: 'dizoo.slider::lang.strings.right'
+        span: left
+        default: center
+        type: balloon-selector
     active:
         label: 'dizoo.slider::lang.strings.active'
         span: left
