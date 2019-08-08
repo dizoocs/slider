@@ -60,6 +60,16 @@ fields:
         default: left
         type: balloon-selector
         cssClass: col-sm-3
+    image_align:
+        label: 'dizoo.slider::lang.strings.image_align'
+        options:
+            left: 'dizoo.slider::lang.strings.left'
+            center: 'dizoo.slider::lang.strings.center'
+            right: 'dizoo.slider::lang.strings.right'
+        span: storm
+        default: center
+        type: balloon-selector
+        cssClass: col-sm-3
     active:
         label: 'dizoo.slider::lang.strings.active'
         span: storm
