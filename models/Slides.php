@@ -48,6 +48,8 @@ class Slides extends Model
      */
     public $rules = [
         'title' => 'required',
-        'image' => 'required'
+        'image' => 'required',
+        'title_size' => 'required',
+        'subtitle_size' => 'required'
     ];
 }

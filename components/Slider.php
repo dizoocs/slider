@@ -24,10 +24,11 @@ class Slider extends ComponentBase {
             }
             $this->addCss('/plugins/dizoo/slider/assets/css/owl.carousel.min.css');
             $this->addCss('/plugins/dizoo/slider/assets/css/owl.theme.min.css');
+            $this->addCss('/plugins/dizoo/slider/assets/css/custom-slider.css');
             $this->addJs('/plugins/dizoo/slider/assets/js/owl.carousel.min.js');
             $this->addJs('/plugins/dizoo/slider/assets/js/start-slider.js');
         } else {
-            
+            $this->page['slides'] = false;
         }
 
     }
