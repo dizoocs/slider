@@ -73,10 +73,6 @@
     margin-bottom: 30px !important;
 }
 
-.font-50 {
-    font-size: 50px !important;
-}
-
 .color-lighter {
     color: #F5F5F5 !important;
 }
@@ -84,10 +80,6 @@
 .hero-overlay-inner h2, .hero-overlay-inner h1, .hero-overlay-inner a {
     color: #fff !important;
     font-weight: normal !important;
-}
-
-.hero-overlay-inner h2 {
-    font-size: 28px !important;   
 }
 
 .t-left,

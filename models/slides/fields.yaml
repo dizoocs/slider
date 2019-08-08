@@ -6,27 +6,49 @@ fields:
         thumbOptions:
             mode: crop
             extension: auto
-        span: auto
+        span: storm
         required: 1
         type: fileupload
+        cssClass: col-sm-6
     subtitle:
         label: 'dizoo.slider::lang.strings.slide_subtitle'
-        span: left
+        span: storm
         type: text
         attributes:
             maxlength: '40'
+        cssClass: col-sm-4
+    subtitle_size:
+        label: 'dizoo.slider::lang.strings.slide_font_size'
+        span: storm
+        type: number
+        required: 1
+        step: 1
+        min: 1
+        max: 100
+        cssClass: col-sm-2
     title:
         label: 'dizoo.slider::lang.strings.slide_title'
-        span: left
+        span: storm
         required: 1
         type: text
         attributes:
             maxlength: '25'
+        cssClass: col-sm-4
+    title_size:
+        label: 'dizoo.slider::lang.strings.slide_font_size'
+        span: storm
+        type: number
+        required: 1
+        step: 1
+        min: 1
+        max: 100
+        cssClass: col-sm-2
     description:
         label: 'dizoo.slider::lang.strings.slide_description'
         size: small
-        span: left
+        span: storm
         type: textarea
+        cssClass: col-sm-6
         attributes:
             maxlength: '210'
     text_align:
@@ -34,23 +56,37 @@ fields:
         options:
             left: 'dizoo.slider::lang.strings.left'
             center: 'dizoo.slider::lang.strings.center'
-        span: left
+        span: storm
         default: left
         type: balloon-selector
+        cssClass: col-sm-3
     image_align:
         label: 'dizoo.slider::lang.strings.image_align'
         options:
             left: 'dizoo.slider::lang.strings.left'
             center: 'dizoo.slider::lang.strings.center'
             right: 'dizoo.slider::lang.strings.right'
-        span: left
+        span: storm
         default: center
         type: balloon-selector
+        cssClass: col-sm-3
     active:
         label: 'dizoo.slider::lang.strings.active'
-        span: left
+        span: storm
         default: 1
         type: switch
+        cssClass: col-sm-12
+    image:
+        label: 'dizoo.slider::lang.strings.slide_image'
+        mode: image
+        useCaption: 0
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: storm
+        required: 1
+        type: fileupload
+        cssClass: col-sm-6
 tabs:
     fields:
         button_1_active:
