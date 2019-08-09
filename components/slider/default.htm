@@ -3,7 +3,7 @@
 <section class="section hero-area">
     <div class="hero-slider owl-carousel owl-controls-1" data-nav="true" data-loop="{{ __SELF__.property('loop') ? 'true':'false' }}" data-autoplay="{{ __SELF__.property('autoplay') ? 'true':'false' }}" data-smart-speed="1000" data-autoplay-timeout="10000">
         {% for slide in slides %}
-        <div class="hero-slider-item slider-bg-{{ image_align }} " data-bg-img="{{ slide.image.thumb(1920,900,{'mode':'crop'}) }}">
+        <div class="hero-slider-item slider-bg-{{ slide.image_align }} " data-bg-img="{{ slide.image.thumb(1920,900,{'mode':'crop'}) }}">
             <div class="hero-overlay">
                 <div class="hero-overlay-wrapper">
                     <div class="pos-tb-center hero-overlay-inner">
