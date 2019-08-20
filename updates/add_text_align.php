@@ -15,9 +15,11 @@ class AddTextAlign extends Migration
 
     public function down()
     {
-        Schema::table('dizoo_slider_slides', function($table)
-        {
-            $table->dropColumn('text_align');
-        });
+        if (Schema::hasColumn('dizoo_slider_slides', 'text_align')) {
+            Schema::table('dizoo_slider_slides', function($table)
+            {
+                $table->dropColumn('text_align');
+            });
+        }
     }
 }

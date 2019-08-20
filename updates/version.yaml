@@ -25,3 +25,5 @@
     - 'Bugfix for translate content.'
 1.1.2:
     - 'Aligning slide image now works as intended'
+1.1.3:
+    - 'Bugfix to prevent error on uninstall'

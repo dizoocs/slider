@@ -17,11 +17,25 @@ class AddImageAlignFontSize extends Migration
 
     public function down()
     {
-        Schema::table('dizoo_slider_slides', function($table)
-        {
-            $table->dropColumn('image_align');
-            $table->dropColumn('title_size');
-            $table->dropColumn('subtitle_size');
-        });
+        if (Schema::hasColumn('dizoo_slider_slides', 'image_align')) {
+            Schema::table('dizoo_slider_slides', function($table)
+            {
+                $table->dropColumn('image_align');
+            });
+        }
+
+        if (Schema::hasColumn('dizoo_slider_slides', 'title_size')) {
+            Schema::table('dizoo_slider_slides', function($table)
+            {
+                $table->dropColumn('title_size');
+            });
+        }
+
+        if (Schema::hasColumn('dizoo_slider_slides', 'subtitle_size')) {
+            Schema::table('dizoo_slider_slides', function($table)
+            {
+                $table->dropColumn('subtitle_size');
+            });
+        }
     }
 }
