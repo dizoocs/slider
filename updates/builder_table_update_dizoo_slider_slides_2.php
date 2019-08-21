@@ -15,9 +15,11 @@ class BuilderTableUpdateDizooSliderSlides2 extends Migration
     
     public function down()
     {
-        Schema::table('dizoo_slider_slides', function($table)
-        {
-            $table->dropColumn('active');
-        });
+        if (Schema::hasColumn('dizoo_slider_slides', 'active')) {
+            Schema::table('dizoo_slider_slides', function ($table) {
+                $table->dropColumn('active');
+
+            });
+        }
     }
 }
