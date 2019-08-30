@@ -50,7 +50,7 @@ fields:
         type: textarea
         cssClass: col-sm-6
         attributes:
-            maxlength: '210'
+            maxlength: '255'
     text_align:
         label: 'dizoo.slider::lang.strings.text_align'
         options:
