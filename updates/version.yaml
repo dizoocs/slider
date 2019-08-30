@@ -29,3 +29,6 @@
     - 'Bugfix to prevent error on uninstall'
 1.1.4:
     - 'Fixed error messages when uninstalling with SQLite'
+1.1.5:
+    - 'Increase field length for text'
+    - increase_description_length.php
