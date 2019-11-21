@@ -56,16 +56,19 @@ fields:
         type: colorpicker
         availableColors: ['#000000', '#FFFFFF']
         cssClass: col-sm-2
+        span: storm
     title_color:
         label: 'dizoo.slider::lang.strings.slide_title_color'
         type: colorpicker
         availableColors: ['#000000', '#FFFFFF']
         cssClass: col-sm-2
+        span: storm
     description_color:
         label: 'dizoo.slider::lang.strings.slide_description_color'
         type: colorpicker
         availableColors: ['#000000', '#FFFFFF']
         cssClass: col-sm-2
+        span: storm
     text_align:
         label: 'dizoo.slider::lang.strings.text_align'
         options:
