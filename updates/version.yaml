@@ -35,3 +35,5 @@
 1.2.0:
     - 'Fix for center aligning text and added the possibility to add colors to the text'
     - add_text_color.php
+1.2.1:
+    - 'Fix for colorpickers in model'
