@@ -51,6 +51,21 @@ fields:
         cssClass: col-sm-6
         attributes:
             maxlength: '255'
+    subtitle_color:
+        label: 'dizoo.slider::lang.strings.slide_subtitle_color'
+        type: colorpicker
+        availableColors: ['#000000', '#FFFFFF']
+        cssClass: col-sm-2
+    title_color:
+        label: 'dizoo.slider::lang.strings.slide_title_color'
+        type: colorpicker
+        availableColors: ['#000000', '#FFFFFF']
+        cssClass: col-sm-2
+    description_color:
+        label: 'dizoo.slider::lang.strings.slide_description_color'
+        type: colorpicker
+        availableColors: ['#000000', '#FFFFFF']
+        cssClass: col-sm-2
     text_align:
         label: 'dizoo.slider::lang.strings.text_align'
         options:

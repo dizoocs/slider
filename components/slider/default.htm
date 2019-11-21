@@ -9,10 +9,10 @@
                     <div class="pos-tb-center hero-overlay-inner">
                         <div class="container">
                             <div class="row row-tb-20">
-                                <div class="col-md-8{% if slide.text_align == 'center' %} col-md-offset-2 text-center{% endif %}">
-                                    {% if slide.subtitle %}<h2 style="font-size: {{ slide.subtitle_size }}px !important;" class="mb-10">{{ slide.subtitle }}</h2>{% endif %}
-                                    <h1 style="font-size: {{ slide.title_size }}px !important;" class="t-uppercase mb-20">{{ slide.title }}</h1>
-                                    {% if slide.description %}<p class="mb-30 color-lighter h4">{{ slide.description }}</p>{% endif %}
+                                <div class="col-md-12{% if slide.text_align == 'center' %} text-center{% endif %}">
+                                    {% if slide.subtitle %}<h2 style="font-size: {{ slide.subtitle_size }}px !important;{% if slide.subtitle_color %} color: {{ slide.subtitle_color }} !important; {% endif %}" class="mb-10">{{ slide.subtitle }}</h2>{% endif %}
+                                    <h1 style="font-size: {{ slide.title_size }}px !important;{% if slide.title_color %} color: {{ slide.title_color }} !important; {% endif %}" class="t-uppercase mb-20">{{ slide.title }}</h1>
+                                    {% if slide.description %}<p{% if slide.description_color %} style="color: {{ slide.description_color }} !important;"{% endif %} class="mb-30 color-lighter h4">{{ slide.description }}</p>{% endif %}
                                     {% if slide.button_1_active and slide.button_1_text and slide.button_1_url %}
                                     <a {% if slide.button_1_color %}style="background-color:{{ slide.button_1_color }}; border-color:{{ slide.button_1_color }};" {% endif %}href="{{ slide.button_1_url }}" class="btn btn-rounded btn-wt btn-lg mr-10 mb-20">{{ slide.button_1_text }}</a>
                                     {% endif %}

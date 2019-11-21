@@ -32,3 +32,6 @@
 1.1.5:
     - 'Increase field length for text'
     - increase_description_length.php
+1.2.0:
+    - 'Fix for center aligning text and added the possibility to add colors to the text'
+    - add_text_color.php
