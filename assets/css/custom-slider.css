@@ -1,11 +1,11 @@
-.slider-bg-left {
-    background-position: left;
-}
-
-.slider-bg-right {
-    background-position: right;
+.hero-slider-item {
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .slider-bg-center {
-    background-position: center;
+    background-position: center center;
 }
