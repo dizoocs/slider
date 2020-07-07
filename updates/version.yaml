@@ -37,3 +37,6 @@
     - add_text_color.php
 1.2.1:
     - 'Fix for colorpickers in model'
+1.2.2:
+    - 'Add option to pick your own image dimensions and fixed a bug where the image would not be full width on larger resolutions.'
+    - add_dimensions.php

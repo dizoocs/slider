@@ -47,9 +47,15 @@ class Slides extends Model
      * @var array Validation rules
      */
     public $rules = [
-        'title' => 'required',
+        'title' => 'required|max:25',
+        'subtitle' => 'max:40',
+        'description' => 'max:255',
+        'button_1_text' => 'max:15',
+        'button_2_text' => 'max:15',
         'image' => 'required',
-        'title_size' => 'required',
-        'subtitle_size' => 'required'
+        'title_size' => 'required|integer',
+        'subtitle_size' => 'required|integer',
+        'width' => 'required|integer',
+        'height' => 'required|integer'
     ];
 }

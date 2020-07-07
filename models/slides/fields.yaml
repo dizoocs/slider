@@ -10,6 +10,20 @@ fields:
         required: 1
         type: fileupload
         cssClass: col-sm-6
+    width:
+        label: 'dizoo.slider::lang.strings.image_width'
+        span: storm
+        default: 1920
+        type: number
+        required: 1
+        cssClass: col-sm-3
+    height:
+        label: 'dizoo.slider::lang.strings.image_height'
+        span: storm
+        default: 900
+        type: number
+        required: 1
+        cssClass: col-sm-3
     subtitle:
         label: 'dizoo.slider::lang.strings.slide_subtitle'
         span: storm
@@ -22,6 +36,7 @@ fields:
         span: storm
         type: number
         required: 1
+        default: 24
         step: 1
         min: 1
         max: 100
@@ -38,6 +53,7 @@ fields:
         label: 'dizoo.slider::lang.strings.slide_font_size'
         span: storm
         type: number
+        default: 60
         required: 1
         step: 1
         min: 1
@@ -78,33 +94,12 @@ fields:
         default: left
         type: balloon-selector
         cssClass: col-sm-3
-    image_align:
-        label: 'dizoo.slider::lang.strings.image_align'
-        options:
-            left: 'dizoo.slider::lang.strings.left'
-            center: 'dizoo.slider::lang.strings.center'
-            right: 'dizoo.slider::lang.strings.right'
-        span: storm
-        default: center
-        type: balloon-selector
-        cssClass: col-sm-3
     active:
         label: 'dizoo.slider::lang.strings.active'
         span: storm
         default: 1
         type: switch
         cssClass: col-sm-12
-    image:
-        label: 'dizoo.slider::lang.strings.slide_image'
-        mode: image
-        useCaption: 0
-        thumbOptions:
-            mode: crop
-            extension: auto
-        span: storm
-        required: 1
-        type: fileupload
-        cssClass: col-sm-6
 tabs:
     fields:
         button_1_active:
