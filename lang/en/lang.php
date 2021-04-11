@@ -34,5 +34,8 @@
         'controller_show' => 'Preview slide',
         'active' => 'Display slide',
         'image' => 'Image',
+        'top' => 'Wrapper Code for above the loop',
+        'slide' => 'Code for one slide',
+        'bottom' => 'Wrapper Code for under the loop',
     ],
 ];
