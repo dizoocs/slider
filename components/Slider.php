@@ -55,15 +55,19 @@ class Slider extends ComponentBase {
         $slideCode = '';
         foreach ($slides as $slide) {
             $slideHTML =  $html;
+            $slideHTML = str_replace("{{ align }}", ' style="text-align:'.$slide->text_align.' !important;" ', $slideHTML);
             $slideHTML = str_replace("{{ first_line }}", $slide->subtitle, $slideHTML);
+            $slideHTML = str_replace("{{ first_line_color }}", ' style="color:'.$slide->subtitle_color.' !important;" ', $slideHTML);
             $slideHTML = str_replace("{{ second_line }}", $slide->title, $slideHTML);
+            $slideHTML = str_replace("{{ second_line_color }}", ' style="color:'.$slide->title_color.' !important;" ', $slideHTML);
             $slideHTML = str_replace("{{ third_line }}", $slide->description, $slideHTML);
-            $slideHTML = str_replace("{{ third_line }}", $slide->description, $slideHTML);
+            $slideHTML = str_replace("{{ third_line_color }}", ' style="color:'.$slide->description_color.' !important;" ', $slideHTML);
             $slideHTML = str_replace("{{ image }}", $slide->image->path, $slideHTML);
             if ($slide->button_1_active === 0) {
                 $slideHTML = $this->replace_between($slideHTML, '{% button %}', '{% endbutton %}', '');
             } else {
                 $slideHTML = str_replace("{{ button_url }}", $slide->button_1_url, $slideHTML);
+                $slideHTML = str_replace("{{ button_color }}", ' style="background-color:'.$slide->button_1_color.';" ', $slideHTML);
                 $slideHTML = str_replace("{{ button_text }}", $slide->button_1_text, $slideHTML);
             }
             if (!$slide->button_2_active === 0) {
