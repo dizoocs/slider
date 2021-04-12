@@ -40,3 +40,5 @@
 1.2.2:
     - 'Add option to pick your own image dimensions and fixed a bug where the image would not be full width on larger resolutions.'
     - add_dimensions.php
+1.3.0:
+    - 'Add a custom HTML field in the settings where you can add your own slider HTMLcode when this option is enabled in the component settings.'

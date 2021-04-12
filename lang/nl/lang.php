@@ -34,5 +34,8 @@
         'controller_show' => 'Slide weergeven',
         'active' => 'Slide weergeven',
         'image' => 'Afbeelding',
+        'top' => 'Code boven de slide loop',
+        'slide' => 'Code van een slide',
+        'bottom' => 'Code onder de slide loop',
     ],
 ];

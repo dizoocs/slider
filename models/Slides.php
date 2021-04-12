@@ -58,4 +58,11 @@ class Slides extends Model
         'width' => 'required|integer',
         'height' => 'required|integer'
     ];
+
+    public function beforeSave()
+    {
+        if (!$this->title_color) $this->title_color = '#ffffff';
+        if (!$this->subtitle_color) $this->subtitle_color = '#ffffff';
+        if (!$this->description_color) $this->description_color = '#ffffff';
+    }
 }
