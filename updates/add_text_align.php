@@ -7,10 +7,11 @@ class AddTextAlign extends Migration
 {
     public function up()
     {
-        Schema::table('dizoo_slider_slides', function($table)
-        {
-            $table->string('text_align', 6)->default('left');
-        });
+        if (!Schema::hasTable('dizoo_slider_slides')) {
+            Schema::table('dizoo_slider_slides', function ($table) {
+                $table->string('text_align', 6)->default('left');
+            });
+        }
     }
 
     public function down()

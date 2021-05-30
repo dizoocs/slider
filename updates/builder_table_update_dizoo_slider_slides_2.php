@@ -7,10 +7,11 @@ class BuilderTableUpdateDizooSliderSlides2 extends Migration
 {
     public function up()
     {
-        Schema::table('dizoo_slider_slides', function($table)
-        {
-            $table->boolean('active')->default(1);
-        });
+        if (!Schema::hasTable('dizoo_slider_slides')) {
+            Schema::table('dizoo_slider_slides', function ($table) {
+                $table->boolean('active')->default(1);
+            });
+        }
     }
     
     public function down()

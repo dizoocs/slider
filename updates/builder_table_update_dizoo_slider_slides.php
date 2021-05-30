@@ -7,18 +7,19 @@ class BuilderTableUpdateDizooSliderSlides extends Migration
 {
     public function up()
     {
-        Schema::table('dizoo_slider_slides', function($table)
-        {
-            $table->string('button_1_url', 255)->nullable();
-            $table->string('button_2_url', 255)->nullable();
-            $table->string('subtitle', 40)->nullable()->change();
-            $table->string('description', 210)->nullable()->change();
-            $table->boolean('button_1_active')->nullable()->change();
-            $table->string('button_1_text', 15)->nullable()->change();
-            $table->string('button_1_color', 7)->nullable()->default('#ffffff')->change();
-            $table->boolean('button_2_active')->default(0)->change();
-            $table->string('button_2_text', 15)->nullable()->change();
-        });
+        if (!Schema::hasTable('dizoo_slider_slides')) {
+            Schema::table('dizoo_slider_slides', function ($table) {
+                $table->string('button_1_url', 255)->nullable();
+                $table->string('button_2_url', 255)->nullable();
+                $table->string('subtitle', 40)->nullable()->change();
+                $table->string('description', 210)->nullable()->change();
+                $table->boolean('button_1_active')->nullable()->change();
+                $table->string('button_1_text', 15)->nullable()->change();
+                $table->string('button_1_color', 7)->nullable()->default('#ffffff')->change();
+                $table->boolean('button_2_active')->default(0)->change();
+                $table->string('button_2_text', 15)->nullable()->change();
+            });
+        }
     }
     
     public function down()

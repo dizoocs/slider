@@ -7,12 +7,13 @@ class add_dimensions extends Migration
 {
     public function up()
     {
-        Schema::table('dizoo_slider_slides', function($table)
-        {
-            if (!Schema::hasColumn('dizoo_slider_slides', 'width')) $table->integer('width')->default(1920);
-            if (!Schema::hasColumn('dizoo_slider_slides', 'height')) $table->integer('height')->default(900);
-            if (Schema::hasColumn('dizoo_slider_slides', 'image_align')) $table->dropColumn('image_align');
-        });
+        if (!Schema::hasTable('dizoo_slider_slides')) {
+            Schema::table('dizoo_slider_slides', function ($table) {
+                if (!Schema::hasColumn('dizoo_slider_slides', 'width')) $table->integer('width')->default(1920);
+                if (!Schema::hasColumn('dizoo_slider_slides', 'height')) $table->integer('height')->default(900);
+                if (Schema::hasColumn('dizoo_slider_slides', 'image_align')) $table->dropColumn('image_align');
+            });
+        }
     }
 
     public function down()

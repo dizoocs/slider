@@ -7,12 +7,13 @@ class AddImageAlignFontSize extends Migration
 {
     public function up()
     {
-        Schema::table('dizoo_slider_slides', function($table)
-        {
-            $table->string('image_align', 6)->default('center');
-            $table->integer('title_size')->default(50);
-            $table->integer('subtitle_size')->default(28);
-        });
+        if (!Schema::hasTable('dizoo_slider_slides')) {
+            Schema::table('dizoo_slider_slides', function ($table) {
+                $table->string('image_align', 6)->default('center');
+                $table->integer('title_size')->default(50);
+                $table->integer('subtitle_size')->default(28);
+            });
+        }
     }
 
     public function down()

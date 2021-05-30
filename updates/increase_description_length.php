@@ -7,10 +7,11 @@ class increaseDescriptionLength extends Migration
 {
     public function up()
     {
-        Schema::table('dizoo_slider_slides', function($table)
-        {
-            $table->string('description', 255)->nullable()->change();
-        });
+        if (!Schema::hasTable('dizoo_slider_slides')) {
+            Schema::table('dizoo_slider_slides', function ($table) {
+                $table->string('description', 255)->nullable()->change();
+            });
+        }
     }
 
     public function down()

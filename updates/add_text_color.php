@@ -7,12 +7,15 @@ class addTextColor extends Migration
 {
     public function up()
     {
-        Schema::table('dizoo_slider_slides', function($table)
-        {
-            $table->string('subtitle_color', 7)->default('#FFFFFF');
-            $table->string('title_color', 7)->default('#FFFFFF');
-            $table->string('description_color', 7)->default('#FFFFFF');
-        });
+        if (!Schema::hasTable('dizoo_slider_slides')) {
+            Schema::table('dizoo_slider_slides', function($table)
+            {
+                $table->string('subtitle_color', 7)->default('#FFFFFF');
+                $table->string('title_color', 7)->default('#FFFFFF');
+                $table->string('description_color', 7)->default('#FFFFFF');
+            });
+        }
+
     }
 
     public function down()
